@@ -1,0 +1,18 @@
+.div-grid {
+  width: 100%;
+  text-align: center;
+  height: calc(100vh - 76px);
+  overflow: hidden;
+}
+
+.img-container {
+  display: inline-block;
+  padding: 0;
+  height: 16vh;
+}
+
+.img-container > img {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
