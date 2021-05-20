@@ -12,6 +12,7 @@ const routes: Routes = [
   {path: 'zelena', component: ZelenaComponent},
   {path: 'zelena-rjava', component: ZelenoRjavaComponent},
   {path: 'siva-rjava', component: SivoRjavaComponent}
+
 ];
 
 @NgModule({
