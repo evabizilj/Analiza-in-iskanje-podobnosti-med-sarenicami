@@ -12,4 +12,12 @@ export class NavBarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  dropdown() {
+    var dropdown = document.getElementsByTagName("div")[4];
+    if(dropdown.classList.contains("show")) {
+      dropdown.classList.remove('show');
+    } else {
+      dropdown.classList.toggle("show")
+    }
+  }
 }
