@@ -1,9 +1,16 @@
 <div class="nav">
   <h2>Analiza in iskanje podobnosti med šarenicami</h2>
-  <div class="menu-container">
-    <div class="menu"></div>
+  <div class="menu-container" (click)="dropdown()">
     <div class="menu"></div>
     <div class="menu"></div>
   </div>
+  <div id="myDropdown" class="dropdown-content">
+    <a routerLink="/">Kolaž</a>
+    <a href="/rjava">Rjava šarenica</a>
+    <a href="/zelena">Zelena šarenica</a>
+    <a href="/zelena-rjava">Zeleno-rjava šarenica</a>
+    <a href="/siva-rjava">Sivo-rjava šarenica</a>
+  </div>
+
 </div>
 

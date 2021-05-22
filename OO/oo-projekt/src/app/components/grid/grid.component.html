@@ -1,6 +1,16 @@
 <div class="div-grid">
- <div *ngFor="let gif of gifi" class="img-container">
-    <img src="../../../assets/gifs/{{gif}}">
+ <div *ngFor="let gif of gifi; let i = index"class="img-container">
+    <img src="../../../assets/gifs/{{gif}}" class="img_slika-{{ i }}" (click)="toggle(i)">
  </div>
+</div>
+
+<div id="myModal" class="modal" id="modal">
+
+  <!-- The Close Button -->
+  <span class="close" (click)="close()">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01" style="background-color: black;
+  padding-top: 100px;">
 </div>
 

@@ -1,27 +1,40 @@
-# OoProjekt
+# OO Projekt - Analiza in iskanje podobnosti med šarenicami
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.5.
+1. Link do javno dostopne spletne strani:
 
-## Development server
+2. Avtorji projekta:
+- Amadej Šenk Juh 
+- Gašper Groznik
+- Eva Bizilj
+- Sanil Safić
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+3. Vloge pri projektu:
+- **Gašper** in **Sanil** sta poskrbela za ureditev sprednjega dela (angl. *frontend*) in zaledja (angl. *backend*) spletne strani in dostavo spletne-programske opreme na Heroku.
+- **Eva** in **Amadej** sta poskrbela za predprocesiranje slik šarenic z uporabo K-means algoritma in algoritma za iskanje barvne podobnosti. Le-te sta na podlagi spreminjajoče se **k vrednosti**  uredila v naraščajočem vrstnem redu. Končni izdelek predprocesiranja je **GIF**.
 
-## Code scaffolding
+4. Tehnologije, uporabljene na projektu:
+- xShell script
+- Python 
+- MEAN stack -> predvsem Angular.js, Node.js
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+5. Razvoj projekta je razdeljen v 2 fazi:
+- Predprocesiranje šarenic in avtomatičnim generiranjem GIF-ov s skriptami
+- Prikaz rezultatov 1. faze projekta na spletne strani 
 
-## Build
+6. Namen projekta:
+- Raziskovati podobnosti med šarenicami, tako med istimi barvami kot tudi med različnimi.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+7. Funkcionalnosti spletne strani:
+- Kolaž (dostopen tudi v 4K - skalirana spletna stran)
+- Primerjava enakih šarenic pri istem intervalu k € (1,30) in različnem številu iteracij gručenja (n € {5,10}).
 
-## Running unit tests
+8. Opažanja:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Pri Kolažu opažamo konvergenco iz enostavne v bolj kompleksno strukturo šarenic, ki so na koncu že zelo lep približek slikam pravih šarenic.
+- Pri primerjavi enakih šarenic se osredotočamo predvsem na način in lokacijo pokritosti z barvami, s čimer želimo pokazati, da algoritem kljub polovičnemu številu iteracij še vedno konvergira k enakemu rezultatu - le pot je drugačna.
 
-## Running end-to-end tests
+9. Navodila za zagon aplikacije
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- $ git clone https://github.com/gg4822/OO-projekt.git
+- $ npm install
+- $ ng serve
