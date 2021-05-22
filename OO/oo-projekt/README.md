@@ -16,7 +16,6 @@
 - xShell script
 - Python 
 - MEAN stack -> predvsem Angular.js, Node.js
-- CD -> HerokuApp (ang. *Continuous deployment*)
 
 5. Razvoj projekta je razdeljen v 2 fazi:
 - Predprocesiranje šarenic in avtomatičnim generiranjem GIF-ov s skriptami
@@ -33,3 +32,9 @@
 
 - Pri Kolažu opažamo konvergenco iz enostavne v bolj kompleksno strukturo šarenic, ki so na koncu že zelo lep približek slikam pravih šarenic.
 - Pri primerjavi enakih šarenic se osredotočamo predvsem na način in lokacijo pokritosti z barvami, s čimer želimo pokazati, da algoritem kljub polovičnemu številu iteracij še vedno konvergira k enakemu rezultatu - le pot je drugačna.
+
+9. Navodila za zagon aplikacije
+
+$ git clone https://github.com/gg4822/OO-projekt.git
+$ npm install
+$ ng serve
