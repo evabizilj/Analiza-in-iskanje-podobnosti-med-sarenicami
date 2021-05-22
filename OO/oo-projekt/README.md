@@ -23,7 +23,7 @@ Razvoj projekta je razdeljen v 2 fazi:
 - Prikaz rezultatov 1. faze projekta na spletne strani 
 
 Namen projekta:
-Raziskovati podobnosti med šarenicami, tako iste barve kot tudi različne barve.
+- Raziskovati podobnosti med šarenicami, tako med istimi barvami kot tudi med različnimi.
 
 Funkcionalnosti spletne strani:
 - Kolaž (dostopen tudi v 4K - skalirana spletna stran)
