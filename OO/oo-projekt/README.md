@@ -35,6 +35,6 @@
 
 9. Navodila za zagon aplikacije
 
-$ git clone https://github.com/gg4822/OO-projekt.git
-$ npm install
-$ ng serve
+- $ git clone https://github.com/gg4822/OO-projekt.git
+- $ npm install
+- $ ng serve
