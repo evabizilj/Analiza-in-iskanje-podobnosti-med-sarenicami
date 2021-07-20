@@ -1,0 +1,52 @@
+<!--<div class="div-grid">
+    <div *ngFor="let slika of slike; let i = index"class="img-container">
+       <img src="../../../assets/pictures/{{slika}}">
+    </div> 
+</div> -->
+<div class="row">
+  <div class="column">
+    <img src="../../../assets/pictures/brown_29.png" class="hoverYep" id="brown" style="width:80%"
+      (mouseout)="onMouseout('1')" (mouseover)="onMouseover('1')" (click)="onClick('1')">
+    <p class="lead" style="text-align: center; padding-right: 85px;">Rjava</p>
+  </div>
+  <div class="column">
+    <img src="../../../assets/pictures/green_29.png" class="hoverYep" id="green" style="width:80%"
+      (mouseout)="onMouseout('2')" (mouseover)="onMouseover('2')" (click)="onClick('2')">
+    <p class="lead" style="text-align: center; padding-right: 70px;">Zelena</p>
+  </div>
+  <div class="column">
+    <img src="../../../assets/pictures/grey-green_29.png" class="hoverYep" id="grey-green" style="width:80%"
+      (mouseout)="onMouseout('3')" (mouseover)="onMouseover('3')" (click)="onClick('3')">
+    <p class="lead" style="text-align: center; padding-right: 65px;">Sivo-zelena</p>
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <img src="../../../assets/pictures/green-brown_29.png" class="hoverYep" id="green-brown" style="width:80%"
+      (mouseout)="onMouseout('4')" (mouseover)="onMouseover('4')" (click)="onClick('4')">
+    <p class="lead" style="text-align: center; padding-right: 85px;">Zeleno-rjava</p>
+  </div>
+  <div class="column">
+    <img src="../../../assets/pictures/blue_29.png" class="hoverYep" id="blue" style="width:80%"
+      (mouseout)="onMouseout('5')" (mouseover)="onMouseover('5')" (click)="onClick('5')">
+    <p class="lead" style="text-align: center; padding-right: 85px;">Sivo-modra</p>
+  </div>
+</div>
+<br>
+<div class="row">
+  <div class="col-sm-6">
+    <div id="divChart">
+      <canvas id="myChart2"></canvas>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <p class="lead">Krožni diagram predstavlja povprečne deleže 9 najbolj reprezentativnih barvnih odtenkov gručene šarenice pri k=30.</p>
+    <p class="lead">Uporabljene Python skripte:</p>
+    <ul class="lead">
+      <li><b>bar.py</b></li>
+      <li><b>daugman.py</b></li>
+      <li><b>algorithm.py</b></li>
+    </ul>  
+    
+  </div>
+</div>

@@ -1,0 +1,48 @@
+<p class="lead"> Ocena podobnosti med dvema šarenicama je sestavljena iz ocen <b>MSE, SSIM, osnovni Gaborjev filter, Daugmannov algoritem in histogram</b>. Vsaka izmed 
+    ocen se nahaja med 0 in 100. Največjo utež ima <b>Daugmannov algoritem</b>, saj prepoznava šarenice. V primeru, da zazna 2 elipsi, tj. beločnica in roženica, je ocena
+    podobnosti skoraj zagotovo višja od 60 %.
+    Rezultati se pridobivajo preko mojega REST APi-ja, preko katerega na mojem strežniku tečejo Python skripte za zgornje algoritme.
+</p>
+<div class="row">
+    <div class="col-sm-6">
+        <label class="lead">Izberite sliki šarenic (.png, .jpeg)</label>
+    </div>
+    <div class="col-sm-6">
+        <label class="lead">Ocena podobnosti:</label>&nbsp;&nbsp;
+        <label id = "ocena" class="lead">0.00 / 100</label>
+    </div>
+</div>
+
+<br>
+<br>
+<div class="row">
+    <div class="col-sm-6">
+        <img id="slika1" class="frame" style="border: black;" [src]="url">
+        <td style="line-height:10px" colspan=3>&nbsp;</td>
+        <input type="file" id="image1" accept="image/png, image/jpeg" (change)="onselect($event,'1')">
+        <br>
+        <p class="lead">Slika 1</p>
+        <img id="slika2" class="frame" style="border: black;" [src]="url2">
+        <td style="line-height:10px" colspan=3>&nbsp;</td>
+        <input type="file" id="image2" accept="image/png, image/jpeg" (change)="onselect($event,'2')">
+        <p class="lead">Slika 2</p>
+        <br>
+        <input id="res" type="button" value="Analiziraj" (click)="onClick()">&nbsp;
+        <input id="clear" type="button" value="Ponastavi" (click)="onClear()">
+    </div>
+    <div class="col-sm-6">
+
+        <div id="divChart">
+            <canvas id="myChart3"></canvas>
+        </div>
+       
+    </div>
+
+</div>
+
+
+<div class="container">
+    <div #chart>
+
+    </div>
+</div>

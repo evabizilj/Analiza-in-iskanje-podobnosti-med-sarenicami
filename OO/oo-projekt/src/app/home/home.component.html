@@ -1,0 +1,36 @@
+<div class="jumbotron" style="border-radius: 0px;height:4600px" >
+  <div class="container">
+    <h1 class="display-4" style="font-size: 40px"><b>Analiza in iskanje podobnosti med šarenicami uporabnikov</b></h1>
+    <p class="lead">Projektna naloga pri predmetu Osnove oblikovanja</p>
+    <hr class="my-4">
+    
+    <p class="lead">V okviru projektne naloge sva želela prikazati barvne kategorije s pomočjo <b>algoritma K-voditeljev</b>. 
+      Prepoznala sva 5 večjih kategorij (za k=5)  med vsemi vzorci N=248. Med njimi sva znotraj posameznih kategorij 
+      izračunala <b>povprečno vrednost RGB komponent</b> in <b>Hellingerjevo razdaljo</b> pri k &isin; [1,30]. Na podlagi slednjega sva izdelala kolaž.
+      </p>
+    <app-chart></app-chart>
+    <hr class="my-4">
+    <h2 class="display-4" style="font-size: 40px">Barvne kategorije</h2>
+    <br>
+    <app-color-category></app-color-category>
+    <br>
+    <hr class="my-4">
+    <h2 class="display-4" style="font-size: 40px">Primerjava dveh šarenic</h2>
+    <br>
+    <app-chart2></app-chart2>
+    <br>
+    <hr class="my-4">
+    <h2 class="display-4" style="font-size: 40px">Rezultati Daugmannovega algoritma</h2>
+    <app-daugmann></app-daugmann>
+    
+  </div>
+</div>
+
+<footer class="page-footer font-small blue" style="background-color: #525252; margin-top: -32px">
+
+  <div class="footer-copyright text-center py-3" style="color: white">
+   © 2021 Copyright &nbsp;&nbsp;
+    <a routerLink="/register" style="text-decoration: none; color: white"> Amadej Šenk, Eva Bizilj</a>
+  </div>
+
+</footer>

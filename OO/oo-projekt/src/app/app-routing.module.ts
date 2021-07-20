@@ -1,17 +1,15 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { GridComponent } from './components/grid/grid.component';
-import { RjavaComponent } from './components/rjava/rjava.component';
-import { SivoRjavaComponent } from './components/sivo-rjava/sivo-rjava.component';
-import { ZelenaComponent } from './components/zelena/zelena.component';
-import { ZelenoRjavaComponent } from './components/zeleno-rjava/zeleno-rjava.component';
+import { HomeComponent } from './home';
+import { LoginComponent } from './login';
+import { RegisterComponent } from './register';
 
 const routes: Routes = [
-  { path: 'rjava', component: RjavaComponent },
-  {path: '', component: GridComponent},
-  {path: 'zelena', component: ZelenaComponent},
-  {path: 'zelena-rjava', component: ZelenoRjavaComponent},
-  {path: 'siva-rjava', component: SivoRjavaComponent}
+  {path: 'grid', component: GridComponent},
+  { path: '', component: HomeComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'register', component: RegisterComponent }
 
 ];
 
