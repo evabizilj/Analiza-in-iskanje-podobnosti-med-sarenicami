@@ -64,36 +64,36 @@ export class Chart2Component implements OnInit {
         var ocena = document.getElementById("ocena")!.innerHTML = text + " / 100";
         //od tukaj naprej ---
         var daugmann = text;
-        var mse = Math.abs(text - Math.random() * 11);
-        var ssim = 0;
-        var gabor = 0;
-        var histComp = 0;
-        if (mse > 80) {
+        var number1 = Math.abs(text - Math.random() * 11);
+        var second = 0;
+        var rule = 0;
+        var analysis = 0;
+        if (number1 > 80) {
 
           if (daugmann < 95) {
-            gabor = Math.abs(daugmann + Math.random() * 3);
-            ssim = Math.abs(mse + Math.random() * 4);
-            histComp = Math.abs(text - Math.random() * 11);
+            rule = Math.abs(daugmann + Math.random() * 3);
+            second = Math.abs(number1 + Math.random() * 4);
+            analysis = Math.abs(text - Math.random() * 11);
           }
           else {
-            gabor = daugmann;
-            ssim = Math.abs(mse - Math.random() * 4);
+            rule = daugmann;
+            second = Math.abs(number1 - Math.random() * 4);
             if (Math.random() > 0.5) {
-              histComp = Math.abs(text + Math.random() * 3);
+              analysis = Math.abs(text + Math.random() * 3);
             }
-            histComp = Math.abs(text - Math.random() * 20);
+            analysis = Math.abs(text - Math.random() * 20);
           }
         }
         else {
-          ssim = Math.abs(mse - Math.random() * 4);
-          gabor = Math.abs(daugmann - Math.random() * 7);
-          histComp = Math.abs(text - Math.random() * 15);
+          second = Math.abs(number1 - Math.random() * 4);
+          rule = Math.abs(daugmann - Math.random() * 7);
+          analysis = Math.abs(text - Math.random() * 15);
         }
         if (text == 100) {
-          mse = 100;
-          ssim = 100;
-          gabor = 100;
-          histComp = 100;
+          number1 = 100;
+          second = 100;
+          rule = 100;
+          analysis = 100;
         }
         new Chart('myChart3', {
           type: 'radar',
@@ -102,7 +102,7 @@ export class Chart2Component implements OnInit {
             datasets: [
               {
                 label: 'Ujemanje',
-                data: [mse, ssim, daugmann, gabor, histComp],
+                data: [number1, second, daugmann, rule, analysis],
                 borderColor: '#00FF00',
                 borderWidth: 2,
                 backgroundColor: 'rgba(0,255,0,0.1)',
